@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+// Declaración de funciones sobrecargadas
+void imprime(int numInt) {
+    cout << "Entero: " << numInt << endl;
+}
+
+void imprime(double numDouble) {
+    cout << "Doble flotante: " << numDouble << endl;
+}
+
+void imprime(const string& st) {
+    cout << "String: " << st << endl;
+}
+
+int main() {
+    // Llamadas a las funciones sobrecargadas
+    imprime(60);           // Llama a la versión que acepta un int
+    imprime(100.780);         // Llama a la versión que acepta un double
+    imprime("ABC");      // Llama a la versión que acepta una cadena
+
+    return 0;
+}
